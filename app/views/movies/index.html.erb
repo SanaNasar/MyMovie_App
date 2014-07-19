@@ -1,0 +1,28 @@
+<h2> <b> Welcome to RetFlix!! (See our collection of movies below) :) :) </b></h2>
+	
+	 
+		<h3><%= link_to "Add a new movie", new_movie_path %></h3>
+
+		<h3><%= "Search for a movie" %></h3>
+		 <%= form_tag movies_path, method: "GET" %>
+  		<%= text_field_tag :q, params[:q] %>
+  		<%= submit_tag "Search" %>
+	<h3><%= "Here are the list of movies" %></h3>
+
+	<% @movies.each do |film| %>
+	<li>
+		<b><%= film.title %></b>- <b><%= film.year_released %></b>
+		<p><%= film.description %></p>
+	</li>
+	<% end %>
+
+
+
+
+	
+			
+
+
+
+
+
