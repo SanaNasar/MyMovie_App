@@ -1,7 +1,9 @@
+My Movie App Using Ruby On Rails
+
 == README
 
 This README would normally document whatever steps are necessary to get the
-application up and running.
+application up and running. ^_^
 
 Things you may want to cover:
 
